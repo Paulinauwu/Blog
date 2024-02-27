@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^inicio$                index.php
+RewriteRule ^login$                 login.php
+RewriteRule ^panelUsuario$          panelUsuario.php
+RewriteRule ^bienvenida$            bienvenida.php
+RewriteRule ^admin$                 admin/index.php
+RewriteRule ^editar-perfil$         editar-perfil.php
+RewriteRule ^subirNoticia$          subirNoticia.php
+RewriteRule ^noticias$              noticias.php
+RewriteRule ^signup$                signup.php
