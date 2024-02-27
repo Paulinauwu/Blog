@@ -1,0 +1,447 @@
+html {
+    box-sizing: border-box;
+    font-size: 40%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+img {
+    max-width: 100%;
+    
+}
+.contenedor {
+    width: 100%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3.8rem;
+    color: #ffffff;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.fondo{
+    background-color: #a7a0a4;
+}
+
+/*Estilos para el encabezado
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: #3F3634;
+}
+*/
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu{
+    float: right;
+    line-height:100px;
+}
+
+.container  .logo{
+    float: left;
+    line-height:0px;
+    display: flex;
+}
+.container .btn-menu label .milabel {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#milabel {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Otros estilos para el encabezado */
+.header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3F3634;
+    z-index: 1000; 
+}
+
+/* Resto de tus estilos */
+
+
+.logo h1{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 3rem;
+}
+/* Estilos para el menú de navegación */
+.container .menu {
+    text-align: right; /* Centrar horizontalmente el menú */
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.container .menu a:hover {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+/*Fin de Estilos para el encabezado*/
+
+/*Menú lateral*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+#btn-menu {
+    display: none;
+}
+/**cambios***/
+/* Estilos para el ícono de menú */
+.btn-menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+/* Estilos para el ícono de menú */
+.menu-icon-index i {
+    position: absolute;
+    top: -28px; 
+    right: 20px; 
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Estilos para el elemento label específico en el índice */
+#milabel {
+    background-color: transparent;
+    color: transparent;
+}
+.menu-icon-index {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    font-size: 18px;
+    color: white; 
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .btn-menu {
+        display: block;
+        margin-right: -40px;
+    }
+
+    .btn-menu i {
+        font-size: 25px;
+    }
+
+    .menu-icon-index {
+        top: 45px; 
+    }
+}
+/** fin cambios***/
+
+
+.container-menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 70px;
+    height: 100vh;
+    top: 0;
+    left: -70px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+#btn-menu:checked ~ .container-menu {
+    left: 0;
+}
+
+.cont-menu {
+    width: 100%;
+    background: #1c1c1c;
+    height: 100vh;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    font-size: 15px;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    width: 250px;
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+    
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 23px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+/**cambios***/
+.cont-menu label .milabel {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* Estilos para el ícono de cierre (X) en el menú lateral */
+.cont-menu label {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 24px;
+    color: white; 
+    cursor: pointer;
+    z-index: 1001;
+    background-color: transparent; 
+}
+
+
+/**cambios***/
+
+
+/*Fin de Menù lateral*/
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .rounded-circle {
+            border: 5px solid #fff;
+        }
+
+.main-body {
+    border-radius: 20px; /* Puedes ajustar el valor según tus preferencias */
+    background-color: #fff; /* Cambia el color de fondo según tus preferencias */
+    padding: 20px; /* Agrega espaciado interno para que se vea mejor */
+}
+
+        h4 {
+            color: #333;
+        }
+
+/* Estilo para el campo de entrada de tipo archivo personalizado */
+.custom-file-input {
+    display: none;
+
+}
+
+/* Estilo para el botón personalizado */
+.custom-upload-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2px 68px; /* Ajustar el padding para hacer el botón más ancho en los lados y más alto de arriba a abajo */
+    font-size: 18px;
+    border-radius: 50px; /* Hacer el botón completamente redondo */
+    cursor: pointer;
+}
+
+/* Estilo para el botón personalizado al pasar el cursor sobre él */
+.custom-upload-button:hover {
+    background-color: #117a8b;
+}
+
+/* Estilo para el campo de entrada de tipo archivo personalizado (oculto) */
+.custom-file-input {
+    display: none;
+}
+
+
+/* Estilo personalizado para todos los input en el formulario */
+.form-control {
+    font-size: 2rem; /* Ajusta el tamaño de fuente según tus preferencias */
+    /* Puedes agregar otros estilos personalizados aquí */
+}
+
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px; /* Ajustar el padding para hacer el botón más ancho en los lados y más alto de arriba a abajo */
+            font-size: 15px;
+        }
+
+        .btn-primary:hover {
+            background-color: #117a8b;
+        }
+
+        select {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100%;
+        }
+
+.info {
+    background-color: #17a2b8;
+    display: block; /* Convertir el botón en un bloque para centrarlo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: left; /* Centrar el texto horizontalmente */
+}
+
+.info:hover {
+    background-color: #117a8b;
+}
+
+/* Estilos para el icono de información */
+.info-icon {
+  position: absolute;
+  right: -30px; /* Ajusta la posición desde el borde derecho */
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Estilos para el mensaje emergente */
+.info-icon:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.info-icon:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+/** Footer **/
+
+.site-footer {
+    background-color: #3F3634;
+    margin: 0;
+    width: 100%;
+    padding: 2.8rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+
+.contenedor-footer {
+    padding: 0.1rem 0;
+    text-align: center;
+    y
+}
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+.site-footer nav {
+    display: none;
+}
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+
+    }
+}
+
+.site-footer,
+.contenedor-footer,
+.site-footer nav,
+.copyright {
+    color: #ffffff; /*color blanco */
+}

@@ -1,0 +1,491 @@
+
+
+  /* Listado de proyectos*/
+
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2;
+    background-color: #ffffff;
+  }
+    
+   /* Estilos para el encabezado */
+  /* Estilos para el encabezado */
+  .headers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #3F3634;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 20px; /* Agrega un espacio interno para los elementos */
+  }
+  
+  .logo {
+    width: 110px;
+    height: auto;
+  }
+  
+  .logo-container {
+    margin-right: 20px; /* Espacio entre el logo y el contenido siguiente */
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; /* Ajusta el valor segÃºn tu preferencia */
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3F3634;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px; /* Espacio entre los botones */
+  }
+  
+  .button:hover {
+    background-color: #5f5553;
+  }
+  
+  /* Estilos para el tÃ­tulo de la pÃ¡gina */
+  .page-title {
+    color: #4d4a4a;
+    margin-top: 150px;
+    align-items: center;
+  }
+  
+  /* Estilos para el contenedor del tÃ­tulo */
+  .title-container {
+    margin-top: 150px; /* Ajusta el valor segÃºn tu preferencia */
+  }
+    h1 {
+      text-align: center;
+    }
+  
+  /* tabla externa css kev */
+  .outer-table {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    display: table; /* Para que el margen automático funcione */
+  }
+  
+  .outer-table td {
+    text-align: center;
+    vertical-align: middle;
+    border: none; /* Eliminar los bordes en las celdas de la tabla externa */
+  }
+  
+  .centered-content {
+    text-align: center; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  /* Estilos de la tabla interna */
+  
+  table {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #05443d;
+    border: none; /* Eliminar el borde en la tabla interna */
+    border-radius: 30px; /* Cambiar el valor para esquinas más redondeadas */
+    overflow: hidden;
+  }
+  
+  table, th, td {
+    border: none; /* Eliminar los bordes en la tabla interna */
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #d1a56b; 
+  }
+  
+  tr:nth-child(even) {
+    background-color: #9bd4be; 
+  }
+  
+  tr:first-child {
+    background-color: #d5d1df; /* Cambia este color para el primer tr */
+  }
+  
+  td {
+    padding: 10px;
+    text-align: left;
+    color: black;
+  }
+  
+  th {
+    padding: 10px;
+    text-align: left;
+    color: #3F3634;
+  }
+  
+  th:first-child, td:first-child {
+    background-color: #86827d;
+  }
+  
+  th:last-child, td:last-child {
+    background-color: #dddcda;
+  }
+  
+  
+    .site-footer {
+      background-color: #3F3634;
+      margin-top: auto; /* Empuja el footer hacia abajo */
+      padding: 20px; /* Espacio interno en el footer */
+    }
+  /* ... (otros estilos) ... */
+  
+  
+  .editar-blog-form {
+    margin-top: 180px; /* Espacio desde arriba */
+  }
+  
+  /* ... (otros estilos) ... */
+  
+    /* Estilo para la pÃ¡gina de ediciÃ³n de blog */
+  body.editar-blog {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ccc9c7; /* Color de fondo cafÃ© claro */
+  }
+  
+  .editar-blog-container {
+    max-width: 1000px; /* Ajusta el valor para hacerlo mÃ¡s grande */
+    margin: 0 auto;
+    padding: 40px; /* Aumenta el espacio interno */
+    background-color: white;
+    border-radius: 15px; /* Haz los bordes un poco mÃ¡s redondos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+    text-align: center; /* Centra todo el contenido del contenedor */
+  }
+  
+  
+  .editar-blog h1.editar-blog-header {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .editar-blog-form label {
+    position: relative;
+    padding: 1rem;
+    background-color: #635b5a;
+    color:#ffffff
+  }
+  label {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  
+  
+  }
+  .editar-blog-form input[type="text"],
+  .editar-blog-form select {
+    padding: 1rem;
+    width: 95%;
+    background-color: #e1e1e1;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 1rem;
+  }
+  
+  .editar-blog-form textarea {
+    width: 700px; /* Ancho especÃ­fico */
+    height: 250px; /* Altura especÃ­fica */
+    resize: vertical; /* Permite ajustar la altura verticalmente */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  .editar-blog-form input[type="file"] {
+    margin-top: 10px;
+  }
+  
+  /* Estilo para el botÃ³n "Guardar Cambios" */
+  .editar-blog-form input[type="submit"],
+  .editar-blog-form button[name='eliminar_blog'] {
+    display: inline-block;
+    background-color: #7b5b38; /* Color cafÃ© oscuro para el botÃ³n */
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Aumenta el tamaÃ±o del botÃ³n */
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px; /* Ajusta el espacio superior */
+    margin-right: 200px; /* Espacio horizontal entre botones */
+  
+  }
+  
+  /* Estilo para el botÃ³n "Eliminar Blog" */
+  .editar-blog-form button[name='eliminar_blog'] {
+    background-color: #d9534f; /* Color cafÃ© oscuro para el botÃ³n */
+  }
+  
+  /* Estilo para el botÃ³n "Eliminar Blog" al pasar el mouse */
+  .editar-blog-form button[name='eliminar_blog']:hover {
+    background-color: #c9302c; /* Color rojo oscuro al pasar el mouse */
+  }
+  
+  /* Estilo para las imÃ¡genes */
+  .editar-blog-form img {
+    max-width: 500px; /* TamaÃ±o mÃ¡ximo para las imÃ¡genes */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px auto; /* Centra las imÃ¡genes */
+  }
+  
+  /* Estilo para los mensajes de error */
+  .editar-blog-form p.error-message {
+    color: red;
+  }
+  
+  /* Estilo para los enlaces */
+  a {
+    color: #6cb3c0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para el buscador */
+  #busqueda {
+    padding: 8px;
+    border: 2px solid #ddd; /* Borde color pastel */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    width: 50%; /* Ocupa la mitad del espacio */
+    margin: 0 auto; /* Centrado horizontal */
+    display: block; /* Asegura que ocupe toda la lÃ­nea horizontal */
+    margin-bottom: 20px;
+  }
+  
+  #busqueda::placeholder {
+    color: #ccc;
+  }
+  
+  
+/** Contacto **/
+.contactou p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+legend {
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+textarea {
+    height: 40rem;
+}
+.forma-contacto {
+    max-width:30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extra{
+    display: none;
+}
+
+p {
+   display: inline;
+   }
+
+   input[type="checkbox"]{
+    height: 2em;
+    display: block;
+    appearance: none;
+   }
+
+   label{
+    position: relative;
+    padding: 1em;
+    background-color: #D35400;
+    color:#ffffff;
+    cursor: pointer;
+   }
+
+  
+
+  /**BTN1**/
+
+   label .btn1 ::before{
+    content: 'Leer mas';
+   }
+
+   input[type="checkbox"]:checked ~ label .btn1 ::before{
+    content: 'Leer menos';
+   }
+
+     /***BTN2**/
+
+   label .btn2 ::before{
+    content: 'Leer mas';
+   }
+
+   input[type="checkbox"]:checked ~ label .btn2 ::before{
+    content: 'Leer menos';
+   }
+
+  /**BTN3**/
+
+   label .btn3 ::before{
+    content: 'Leer mas';
+   }
+
+   input[type="checkbox"]:checked ~ label .btn3 ::before{
+    content: 'Leer menos';
+   }
+
+   .dots:has(~ input[type="checkbox"]:checked){
+    display: none;
+   }
+
+   .extra:has(~ input[type="checkbox"]:checked){
+    display: inline;
+   }
+   
+   
+   /**SECCION BG APARTADO DE BIENVENIDA**/
+
+.BgImage1 {
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+  }
+
+  .BgImage2 {
+    background-image: url('../img/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+  }
+
+  .BgImage3 {
+    background-image: url('../img/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+  }
+  
+  /* Estilos para la animación de carga */
+  #loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3F3634;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    
+    .loading-content {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 10000;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .loading-content span.large-letter {
+      font-size: 30px;
+    }
+    
+    .loading-content span {
+      visibility: hidden;
+      font-size: 24px;
+    }
+    
+
+  @keyframes jumpAnimation {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px); 
+      }
+      60% {
+        transform: translateY(-30px); 
+      }
+    }
+    
+    .loading-logo {
+      animation: jumpAnimation 2s ease infinite;
+    }
+    
+    #loading-overlay img {
+      animation: jumpAnimation 2s ease infinite; 
+    }
+    
+    
+    .hidden-content {
+      display: none;
+    }
+  
